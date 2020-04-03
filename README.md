@@ -1,17 +1,19 @@
 # DIU20
 Prácticas Diseño Interfaces de Usuario 2019-20 (Economía Colaborativa) 
 
-Grupo: DIU1_01AABB.  Curso: 2019/20 
+Grupo: DIU3.Bolargo.  Curso: 2019/20 
 
-Proyecto: 
+Proyecto: Bolargos
 
-Descripción: 
+Descripción:
 
-Logotipo: 
+Logotipo:
+
+![Logo BLG](./img/logoBLG.png)
+![Logo Corporativo Bolargo](./img/bolargosLogo.png)
 
 Miembros
- * :bust_in_silhouette:   AA     :octocat:     
- * :bust_in_silhouette:  BB     :octocat:
+ * :bust_in_silhouette:   Francisco José Cotán López     :octocat:
 
 ----- 
 
@@ -30,26 +32,32 @@ Qué es economia colaborativa: Martínez-Polo, J. (2019). **El fenómeno del con
 ![Método UX](img/Competitive.png) 1.a Competitive Analysis
 -----
 
->>> Describe brevemente características de las aplicaciones que tienes asignadas, y por qué has elegido una de ellas (150-300 caracteres) 
+>>> A mi grupo de prácticas se le asignó las plataformas de compartir viaje. Por mi parte, me decanto por **Blablacar**, la razón es porque esta, junto con **Amovens**, son el tipo de aplicaciones que más uso en el día a día. Este tipo de applicaciones tienen como objetivo abaratar costes y en muchas ocasiones reduce el tiempo de los desplazamientos entre ciudades para sus usuarios. Desde el punto de vista de la persona que no tiene medio de transporte proporciona el valor de que haya conductores que estén dispuestos a llevar a desconocidos si van a realizar un viaje similar con el objetivo de que entre los pasajeros le paguen su gasolina.
+Ambos, conductor y pasajero, podrán ver los comentarios y valoraciones de personas que hayan realizado viajes con ellos en el pasado.
+Personalmente he escogido **Blablacar** porque es la que lleva más tiempo en el mercado y es la aplicación que más cuota de mercado tiene para este tipo de servicios.
+Aún así, ambas aplicaciones actualmente cobran comisión (Blablacar cobra algo más), proporcionan un seguro en caso de avería del vehículo y tienen el mismo fin. Amovens tiene además otro modelo de negocio que es el reting de particulares (prestan su vehículo por tiempo limitado) y otras personas alquilan ese coche (por tiempo limitado).
 
 ![Método UX](img/Persona.png) 1.b Persona
 -----
 
->>> Comenta brevemente porqué has seleccionado a esas personas y sube una captura de pantalla de su ficha  (80-150 caracteres)
+>>> He seleccionado a Rocío y a Pedro porque son los 2 tipos de perfiles que suelen acceder a la aplicacíon con 2 propósitos totalmente distintos y fehacientes.
+
+![Rocío López Persona](./img/rocioLopezPersona.png)
+![Pedro Manuel Fernandez Persona](./img/pedroManuelFernandezPersona.png)
 
 ![Método UX](img/JourneyMap.png) 1.c User Journey Map
 ----
 
+>>> He escogido estos 2 tipos de journey map porque representan los deseos y motivos por los que nuestras personas entrarían y utilizarían la aplicación.
 
->>> Comenta brevemente porqué has escogido estas dos experiencias de usuario (y si consideras que son habituales) (80-150 caracteres) 
+![Rocío López Journey Map](./img/rocioLopezJourneyMap.png)
+![Pedro Manuel Fernandez Journey Map](./img/pedroManuelFernandezJourneyMap.png)
 
 ![Método UX](img/usabilityReview.png) 1.d Usability Review
 ----
->>>  Revisión de usabilidad: (toma los siguientes documentos de referncia y verifica puntos de verificación de  usabilidad
->>>> SE deben incluir claramente los siguientes elementos
->>> - Enlace al documento:  (sube a github el xls/pdf) 
->>> - Valoración final (numérica): 
->>> - Comentario sobre la valoración:  (60-120 caracteres)
+>>> - Enlace al documento: https://docs.google.com/spreadsheets/d/1E-e0byYJXL5u_i7jzD4xmzKFcew5D4V76reaqwthQpQ/edit?usp=sharing 
+>>> - Valoración final (numérica): 73 - Good
+>>> - Comentario sobre la valoración:  Blablacar tiene un diseño intuitivo combinando iconos con texto que permite realizar las operaciones principales de la aplicación de una manera muy sencilla. No obstante, el hecho de que haya pocos shortcuts para usuario más experimentados hace que estos pierdan un tiempo innecesario al hacer tareas más repetitivas como la inserción de datos para la creación de viajes similares, sino iguales.
 
 
 ## Paso 2. UX Design  
