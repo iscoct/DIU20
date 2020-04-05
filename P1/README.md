@@ -1,9 +1,1 @@
-## DIU - Practica1, entregables
-
-
-
-
-- Desk research: Análisis Competencia 
-- 2 Personas 
-- 2 User Journey Map  ( 1 por persona)
-- Revisión de Usabilidad 
+# Nota aclaratoria: Toda la información relativa a esta práctica se puede encontrar en el README de la página principal.

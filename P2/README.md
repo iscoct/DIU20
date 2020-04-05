@@ -1,6 +1,1 @@
-DIU - Practica2, entregables
-
-Malla receptora de información 
-Sitemap & Task flow 
-Labelling 
-Wireframe & User flow 
+# Nota aclaratoria: Toda la información relativa a esta práctica se puede encontrar en el README de la página principal.

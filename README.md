@@ -13,7 +13,7 @@ Logotipo:
 ![Logo Corporativo Bolargo](./img/bolargosLogo.png)
 
 Miembros
- * :bust_in_silhouette:   Francisco José Cotán López     :octocat:
+ * :bust_in_silhouette:   [Francisco José Cotán López - @iscoct](https://github.com/iscoct)     :octocat: 
 
 ----- 
 
@@ -69,17 +69,12 @@ Aún así, ambas aplicaciones actualmente cobran comisión (Blablacar cobra algo
 
 >>> Comenta con un diagrama los aspectos más destacados a modo de conclusion de la práctica anterior,
 
-
- Interesante | Críticas     
-| ------------- | -------
-  Preguntas | Nuevas ideas
+![Feedback Capture Grid](img/feedbackCaptureGrid.png)
   
-  
-  
->>> ¿Que planteas como "propuesta de valor" para un nuevo diseño de aplicación para economia colaborativa ?
->>> Problema e hipótesis
->>>  Que planteas como "propuesta de valor" para un nuevo diseño de aplicación para economia colaborativa te
->>> (150-200 caracteres)
+>>> Con respecto a la propuesta de valor desde el punto de vista del negocio propongo viene de la posibilidad de permitir a los pasajeros proponer cuando quieren viajar y el precio que están dispuestos a pagar. De esta manera, los conductores no serán los que impongan los precios, sino que dependiendo de la oferta y la demanda, ambos tendrán que ir variando los precios de una manera más trasparentes y consensuada.
+>>> Además, el sistema pretende realizar las operaciones repetitivas, como la creación de un nuevo viaje, mucho más breves, permitiendo que los usuarios utilizan la aplicación solo y exclusivamente por las operaciones por la que esta existe. Por último, el sistema pretenderá cobrar menos comisión que estas plataformas quitando el seguro que de viaje (el cual incurre un gasto).
+>>> Para cerrar esta sección, el sistema también proveerá de un chat con un bot que permita responder a las preguntas más frecuentes que suelan realizar los usuarios.
+>>> Por otra parte, con respecto a la propuesta de valor por parte de la vista de usuario, propongo un mayor resaltado de los elementos con los que se esté interactuando, así como una mejora en el aprovechamiento del espacio y un mejor contraste en ciertos elementos de entrada de datos.
 
 ![Método UX](img/Sitemap.png) 2.b Tasks & Sitemap 
 -----
@@ -87,21 +82,98 @@ Aún así, ambas aplicaciones actualmente cobran comisión (Blablacar cobra algo
 >>> Definir "User Map" y "Task Flow" ... 
 
 
+|  | Usuario no registrado | Conductor | Pasajero | Administrador | Aclaraciones | Valoración |
+|--|--|--|--|--|--|--|
+| Buscar conductor para realizar viaje | L | M | H | L | Un conductor es probable que busque el precio de otros conductores para adaptar su precio al del mercado | 7 |
+| Buscar pasajero para realizar viaje | L | H | M | L | Un pasajero es probable que busque el precio de otros pasajeros para adaptar su precio al del mercado | 7 |
+| Rellenar los datos para publicar viaje como conductor | L | H | L  | L | Una persona que no se haya registrado podrá rellenar los datos de tal manera que antes de publicarlo le pedirá iniciar sesión (o registrarse) e introducir el vehículo con el que va a viajar en caso de que no esté registrado | 6 |
+| Rellenar los datos para publicar viaje como pasajero| L | H | L  | L | Una persona que no se haya registrado podrá rellenar los datos de tal manera que antes de publicarlo le pedirá iniciar sesión (o registrarse) | 6 |
+| Publicar viaje como conductor | - | H | - | - | No se entiende que otro usuario pueda publicarlo porque entraría en esta categoría. | 3 |
+| Publicar viaje como pasajero | - | - | H | - | No se entiende que otro usuario pueda publicarlo porque entraría en esta categoría. | 3 |
+| Registrarse | L | - | - | - | Se considera que la tarea de registrarse tiene poca frecuencia dado que en la mayoría de casos ésta sucederá solo una vez por usuario | 1 |
+| Iniciar Sesión | H | - | - | - | - | 3 |
+| Cerrar Sesión | - | M | M | M | - | 6 |
+| Modificación de datos personales | - | L | L | L | Por datos personales entendemos: Foto, dirección, nombre, apellidos, fecha de nacimiento, teléfono, descripción | 3 |
+| Modificación de preferencias en el viaje | - | L | L | - | Por preferencias entendemos: Si preferimos hablar mucho, hablar poco o permanecer callados, fumar en el coche, mascotas o poner música | 2 |
+| Modificación del coche del conductor | - | L | - | - | - | 1 |
+| Visualizar nuestras opiniones dadas y recibidas | - | M | M | - | - | 4 |
+| Visualizar las opiniones recibidas de un conductor o pasajero | - | H | H | - | La única manera de ver el perfil con las opiniones es a través de un enlace redireccionado desde la publicación de un viaje o tras haber intercambiado un mensaje con este por chat mientras no se haya completado el viaje que tenga que realizar | 6 |
+| Visualizar historial de los viajes que ha realizado un usuario | - | L | L | - | 2 |
+| Visualizar operaciones bancarias realizadas | - | L | L | - | - | 2 |
+| Pedir dinero del saldo que un conductor tenga pendiente | - | H | - | - | - | 3 |
+| Escribir mensaje por chat | - | H | H | - | - | 6 |
+| Ver viajes publicados | - | H | H | - | - | 6 |
+| Aceptar/rechazar pasajeros en el viaje | - | H | - | - | - | 3 |
+| Aceptar/rechazar viaje de conductor | - | - | H | - | - | 3 |
+| Eliminar usuario de la aplicación | - | - | - | H | - | 3 |
+| Comentar comportamiento de un usuario en un viaje realizado | - | H | H | - | - | 6 |
+| Reportar abuso | - | L | L | - | - | 2 |
+| Cambio de contraseña | - | L | L | L | - | 3 |
+| Recuperación de contraseña | - | L | L | L | - | 3 |
+| Darse de baja en la plataforma | - | L | L | L | - | 3 |
+
+Frecuencias de uso:
+- Alto (H - High) = 3 puntos
+- Medio (M) = 2 puntos
+- Baja (L - Low) = 1 punto
+- '-', no corresponde esa tarea con el tipo de usuario = 0 puntos
+
 ![Método UX](img/labelling.png) 2.c Labelling 
 ----
 
+**Nota**: Páginas como Iniciar Sesión, Cerrar Sesión, Registrarse, Contactos, FAQ y Sobre Nosotros no ha sido incluida porque se consideran Utility Navigation al estar disponibles entre todas las páginas. Esto es así porque Iniciar, Sesión, Registrarse y Cerrar Sesión estarán en la cabecera (véase Wireframes) y Contactos, FAQ, Sobre Nosotros... en el pie de página.
 
 >>> Identificar términos para diálogo con usuario  
 
-Término | Significado     
-| ------------- | -------
-  Login¿?  | acceder a plataforma
+### Términos asociados a la navegación primaria o secundaria
 
+|Término | Significado |
+| ------------- | ------- |
+| Mis Viajes | Muestra una lista de todos los viajes que están publicados para realizar en un futuro por el usuario. Por ejemplo, si tenemos un viaje como conductor el siguiente Jueves, el Viernes tenemos un viaje como pasajero, y el Domingo hacemos la vuelta como conductor, todos estos elementos aparecerán en esta sección |
+| Operaciones Pendientes | Aquí aparecerán operaciones que el usuario necesita atender. Las operaciones que un usuario debe atender están: la aceptación o rechazo de una petición de un conductor o pasajero y comentar a un usuario tras haber hecho un viaje con él |
+| Recuperar Anterior | Muestra una lista de datos que proporcionó el usuario para que busque o publique información con los datos previamente rellenos |
+| Introducir Datos | Muestra un formulario con los datos necesarios para buscar o publicar un viaje ya sea como conductor o pasajero |
+| Contratar | Botón que envía petición al Conductor pidiéndole permiso para viajar en su coche |
+| Escribir Mensaje | Botón que le permite escribir un mensaje al conductor del vehículo |
+| Modificación Preferencias Viajes | Aparece una lista de preferencias para que el usuario escoja la opción que quiera. Estas preferencias saldrán en el perfil del usuario y podrán ser consideradas para un viajar con una persona u otra |
+| Sueldo | Pantalla que muestra nuestro sueldo actual disponible en la aplicación ganado a través de los viajes realizados como conductor. En esta pantalla también podremos pedir el sueldo disponible siempre y cuando tengamos una cuenta bancaria asociada en nuestros datos personales |
+| Comentar Usuario | Formulario que nos permite valorar el servicio que nos ha dado un conductor o valorar el comportamiento de un pasajero y escribir un comentario justificando la valoración |
+| Mis opiniones | Pantalla que nos muestra un historial de las opiniones dadas y realizadas |
+| Mensajes | Chat con otros usuarios. Cabe destacar que sólo se podrán tener conversaciones con usuarios con quien vayamos a tener un próximo viaje y la única manera de buscar y escribir a otros usuarios es a través de Escribir Mensaje tras haber buscado un cierto viaje |
+
+### Términos asociados a la Utility Navigation
+
+|Término | Significado |
+| ------------- | ------- |
+| Iniciar Sesión | Modal que contiene un formulario para Iniciar Sesión con nuestra cuenta de la plataforma o Iniciar Sesión con Google o Facebook |
+| Registrarse | Formulario para crear una cuenta en Bolargos |
+| Preguntas frecuentes | Preguntas comunes con respuestas para ayudar al usuario |
+| Términos y Condiciones | Información legal de la plataforma y de los contratos que se aceptan entre los conductores y los pasajeros y la empresa y los usuarios |
+| Sobre Nosotros | Información relativa a la empresa |
+| Redes Sociales | Lista de enlaces a las redes sociales de la plataforma/empresa |
+
+### Arquitectura de Información para un usuario registrado
+
+![Arquitectura de Información para un usuario registrado](./img/arquitecturaInformacionUsuarioRegistrado.png)
+
+### Arquitectura de Información para un no usuario registrado
+
+![Arquitectura de Información para un usuario registrado](./img/arquitecturaInformacionUsuarioNoRegistrado.png)
+
+### Arquitectura de Información para un administrador
+
+![Arquitectura de Información para un usuario registrado](./img/arquitecturaInformacionAdministrador.png)
+
+#### URL de las imágenes anteriores: [Cotán Arquitectura Información](https://drive.google.com/open?id=1MrfnQX7iBVVExESUZM7Akz4sD1JfnGze)
 
 ![Método UX](img/Wireframes.png) 2.d Wireframes
 -----
 
->>> Plantear el  diseño del layout para Web/movil (organización y simulación ) 
+>>> Plantear el  diseño del layout para Web/movil (organización y simulación )
+
+El diseño se ha considerado para Web.
+
+Dado el tamaño del Wireframe voy a dejar abierto mi fichero de Draw.io para que se pueda consultar ahí: [Cotán Wireframe](https://drive.google.com/open?id=132o5vKSst_92l3LeiWdhzfcHjKCGenxI)
 
 
 ## Paso 3. Make (Prototyping) 
