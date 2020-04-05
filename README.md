@@ -5,7 +5,7 @@ Grupo: DIU3.Bolargo.  Curso: 2019/20
 
 Proyecto: Bolargos
 
-Descripción:
+Descripción: Plataforma de viaje compartido.
 
 Logotipo:
 
